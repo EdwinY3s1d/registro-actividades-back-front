@@ -1,0 +1,6 @@
+.cover-container-search {
+    background-image: url('../assets/background_search.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+  }

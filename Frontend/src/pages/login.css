@@ -1,0 +1,77 @@
+.container{
+  max-width: 100%;
+  padding: 0;
+}
+.contenedor{
+  background-image: url('../assets/background_login-f.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.card-login{
+   position: relative;
+   width: 850px;
+   display: flex;
+   flex-direction: column;
+   margin-left: auto;
+   margin-right: auto;
+   background: #fff;
+   box-shadow: 0 10px 8px rgba(0, 0, 0, 0.4);
+}
+
+.col-first{
+  text-align: center;
+  padding: 40px;
+  background: #ffd300;
+  color: #000;
+}
+
+.col-first p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.col-second{
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.card-content-login {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  background-color: #000080;
+  color: #fff;
+  margin: auto;
+  padding: 50px;
+  height: 345px;
+}
+
+.button-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 100%;
+  background: #ffd900;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.button-login:hover{
+background: #000080;
+color: #fff;
+}
+
+.logo-login{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}

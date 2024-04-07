@@ -1,0 +1,66 @@
+.cover-container {
+  background-image: url('../assets/background_work_f.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    background-image: url('../assets/logo\ uniminuto.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card-content-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .card-content-home img {
+    z-index: 99;
+  }
+
+  .logo{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-title-home {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .card-description {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .button-home{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      font-size: 20px;
+      width: 100%;
+      max-width: 50%;
+      background: #ffd900;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000;
+  }
+
+  .button-home:hover{
+    background: #000080;
+    color: #fff;
+  }
