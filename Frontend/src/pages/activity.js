@@ -5,11 +5,11 @@ function Activity() {
   const [activities, setActivities] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5500/") // replace with your server's address
+    fetch("http://localhost:5500/api/activities") // replace with your server's address
       .then((response) => response.json())
-      .then((data) => setActivities(data.body))
-      .then(() => {
-        console.log("Success:", activities);
+      .then((data) => {
+        setActivities(data);
+        console.log("Success:", data);
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -36,7 +36,7 @@ function Activity() {
                 <td style={{color: 'white'}}>{activity.id}</td>
                 <td style={{color: 'white'}}>{activity.email}</td>
                 <td style={{color: 'white'}}>{activity.activity}</td>
-                <td style={{color: 'white'}}>{activity.date}</td>
+                <td style={{color: 'white'}}>{activity.created_at}</td>
               </tr>
             ))}
           </tbody>
