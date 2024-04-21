@@ -20,7 +20,7 @@ function menu() {
                   <a class="nav-link" href="/register">Registro</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/search">Buscar</a>
+                  <a class="nav-link" href="/activity">Actividades</a>
                 </li>
               </ul>
             </div>
