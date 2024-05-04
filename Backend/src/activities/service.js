@@ -8,7 +8,7 @@ const getAll = async () => {
     return rows;
   } catch (error) {
     console.error('An error occurred:', error);
-    throw error; // Re-throw the error so it can be handled further up the call stack
+    throw error; 
   } finally {
     if (connection) connection.release();
   }
@@ -23,7 +23,7 @@ const createActivity = async (activity) => {
     return result;
   } catch (error) {
     console.error('An error occurred:', error);
-    throw error; // Re-throw the error so it can be handled further up the call stack
+    throw error; 
   } finally {
     if (connection) connection.release();
   }
