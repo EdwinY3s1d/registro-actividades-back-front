@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-const { Config } = require('../config'); // Asegúrate de que esta ruta sea correcta
+const { Config } = require('../config'); 
 const debug = require('debug')('app:module-database');
 
 // Crea el pool de conexiones una vez

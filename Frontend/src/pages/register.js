@@ -3,9 +3,9 @@ import './register.css';
 
 function Register() {
     const [formData, setFormData] = useState({
-        username: '',
+        email: 'edwin.pena@grupo15.edu',
         activity: '',
-        dateTime: ''
+        created_at: ''
     });
 
     const handleChange = (e) => {
@@ -15,7 +15,24 @@ function Register() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        // Here you can handle the form data, like sending it to a server
+    
+        // Send the form data to the server
+        fetch('http://localhost:5500/api/activities', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            window.alert('Success: Activity registered successfully');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            window.alert('Error: Failed to register activity');
+        });
     }
 
     return (
@@ -35,7 +52,7 @@ function Register() {
                         <div class="col-md-12 mb-3">
                             <label class="form-label col-12">
                                 Día y Hora:
-                                <input type="datetime-local" name="dateTime" onChange={handleChange} className="form-control" />
+                                <input type="datetime-local" name="created_at" onChange={handleChange} className="form-control" />
                             </label>
                         </div>
                         <button type="submit" className="button-register">Enviar</button>
